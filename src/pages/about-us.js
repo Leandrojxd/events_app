@@ -15,4 +15,4 @@ const AboutUsPage = () => {
   );
 };
 
-export default Page;
+export default AboutUsPage;

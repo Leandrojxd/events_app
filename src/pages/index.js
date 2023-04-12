@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home({ data }) {
   return (
@@ -11,20 +12,27 @@ export default function Home({ data }) {
       </Head>
       <header>
         <nav>
-          <img></img>
-          <a href="/">Home</a>
-          <a href="/events">Events</a>
-          <a href="/about-us">About us</a>
+          <Link legacyBehavior href="/" passHref>
+            <a>Home</a>
+          </Link>
+          <Link legacyBehavior href="/events" passHref>
+            <a>Events</a>
+          </Link>
+          <Link legacyBehavior href="/about-us" passHref>
+            <a >About Us</a>
+          </Link>
         </nav>
       </header>
       <main>
         {data.map((ev) => (
-          <a key={ev.id} href={`/events/${ev.id}`}>
-            <Image width={200} height={100} alt={ev.title} src={ev.image} /> <h2>{ev.title}</h2>
-            <p>{ev.description}</p>
-          </a>
+          <Link legacyBehavior key={ev.id} href={`/events/${ev.id}`} passHref>
+            <a href={`/events/${ev.id}`}>
+              <Image width={200} height={100} alt={ev.title} src={ev.image} />{" "}
+              <h2>{ev.title}</h2>
+              <p>{ev.description}</p>
+            </a>
+          </Link>
         ))}
-
       </main>
       <footer>
         <p>This is the footer</p>
