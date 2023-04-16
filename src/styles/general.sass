@@ -32,20 +32,31 @@ footer
 
 main
     width: 100%
-        max-width: 1450px
+        max-width: 1250px
         margin: auto 
-        padding: 30px
+        padding: 100px 30px
 
 .home_body
     display: flex
     flex-direction: column
     gap: 50px
+    .image
+        width:45%
     .card
         display: flex
         flex-direction: row
         gap:20px
         justify-content: center
         align-content: center
+        align-items: center
+        &:nth-child(even)
+            direction: rtl
         .content
             width: 50%
+
+.event_single_page
+    .email_registration
+        input
+            height: 40px
+            min-width: 400px
             

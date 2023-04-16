@@ -8,7 +8,7 @@ export const HomePage = ({ data }) => {
         <Link legacyBehavior key={ev.id} href={`/events/${ev.id}`} passHref>
           <a className="card" href={`/events/${ev.id}`}>
             <div className="image">
-              <Image width={200} height={100} alt={ev.title} src={ev.image} />{" "}
+              <Image width={500} height={400} alt={ev.title} src={ev.image} />{" "}
             </div>
             <div className="content">
               <h2>{ev.title}</h2>
