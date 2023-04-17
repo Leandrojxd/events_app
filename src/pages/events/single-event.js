@@ -17,12 +17,6 @@ const SingleEvent = ({ data }) => {
     const emailValue = inputEmail.current.value;
     const eventId = router?.query.id;
 
-    const validRegex =
-      /^([a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*)$/;
-
-    if (!emailValue.match(validRegex)) {
-        setMessage('Please introduce correct email address')
-    }
     try {
       // POST fetch request
       //body emailValue and the eventID
