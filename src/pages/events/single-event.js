@@ -7,8 +7,6 @@ const SingleEvent = ({ data }) => {
   const inputEmail = useRef(); // get the reference of an element inside this component and this is  A HOOK xd
   const router = useRouter(); // esto para tener la ruta de una pagina
   const [message, setMessage] = useState('');
-
-
   const onSubmit = async (e) => {
     e.preventDefault();
     const emailValue = inputEmail.current.value;
@@ -44,7 +42,7 @@ const SingleEvent = ({ data }) => {
           type="email"
           id="email"
           placeholder="Please insert your email here"
-        />{" "}
+        />
         <button>Submit</button>
       </form>
       <p>{message}</p>
