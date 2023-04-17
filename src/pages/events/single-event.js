@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { useRef } from "react";
-import { RESPONSE_LIMIT_DEFAULT } from "next/dist/server/api-utils";
+
 const SingleEvent = ({ data }) => {
   const inputEmail = useRef(); // get the reference of an element inside this component and this is  A HOOK xd
   console.log(inputEmail);

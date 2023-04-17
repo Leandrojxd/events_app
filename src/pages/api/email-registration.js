@@ -46,6 +46,7 @@ export default function handler (req,res) {
             return ev;
         });
         //convert BACK to a string xd 
+        //UPADTE OUR DATABASE
         fs.writeFileSync(filePath, JSON.stringify({events_categories, allEvents: newAllEvents}))
 
 
