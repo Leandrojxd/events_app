@@ -5,10 +5,7 @@ import { useRef } from "react";
 
 const SingleEvent = ({ data }) => {
   const inputEmail = useRef(); // get the reference of an element inside this component and this is  A HOOK xd
-  console.log(inputEmail);
   const router = useRouter(); // esto para tener la ruta de una pagina
-  console.log(router);
-
   const [message, setMessage] = useState('');
 
 
