@@ -7,6 +7,7 @@ const SingleEvent = ({ data }) => {
   const router = useRouter();
   const [message, setMessage] = useState('');
 
+  console.log(data)
   const onSubmit = async (e) => {
     e.preventDefault();
     const emailValue = inputEmail.current.value;
